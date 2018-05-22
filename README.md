@@ -61,3 +61,9 @@ Additional plugins include:
     LDAP_DISABLE_MAIL_ADDRESS_RESOLVER (required), flag indicating if the email address resolver should be disabled
     LDAP_MAIL_ADDRESS_ATTRIBUTE_NAME (optional), LDAP object field used as a email address
     LDAP_GROUP_NAME_ADMIN (optional), LDAP admin group. Default to administrators.
+
+## Configurational steps for Docker in Docker:
+* change Docker socket permissions: chmod 777 /var/run/docker.sock
+## When using docker-compose for Docker in Docker:
+* mount jenkins-home named volume of docker host
+* mount .m2 form host
